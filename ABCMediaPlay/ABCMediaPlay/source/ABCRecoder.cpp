@@ -64,6 +64,7 @@ void _startRecoder(bool &isStop){
         return;
     }
     
+    
     AVPacket pkt;
     
     while (isStop == false) {

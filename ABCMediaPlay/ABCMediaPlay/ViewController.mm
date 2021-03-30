@@ -13,7 +13,14 @@
     [super viewDidLoad];
 
     _recoder = ABCRecoder();
+    _audioPlayer = ABCAudioPlay();
 }
+
+- (IBAction)playAudioAction:(id)sender {
+    _audioPlayer.play();
+}
+
+
 
 - (IBAction)startRecoderAction:(id)sender {
     
