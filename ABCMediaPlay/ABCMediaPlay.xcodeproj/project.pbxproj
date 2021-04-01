@@ -28,6 +28,7 @@
 		429581E226135CDF004AC5A3 /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581DF26135CDF004AC5A3 /* libSDL2_test.a */; };
 		429581E326135CDF004AC5A3 /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E026135CDF004AC5A3 /* libSDL2main.a */; };
 		429581E426135CDF004AC5A3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E126135CDF004AC5A3 /* libSDL2.a */; };
+		429581EA2615F910004AC5A3 /* ABCPcmToWav.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		429581DF26135CDF004AC5A3 /* libSDL2_test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2_test.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2_test.a; sourceTree = "<group>"; };
 		429581E026135CDF004AC5A3 /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2main.a; sourceTree = "<group>"; };
 		429581E126135CDF004AC5A3 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2.a; sourceTree = "<group>"; };
+		429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ABCPcmToWav.cpp; sourceTree = "<group>"; };
+		429581E92615F910004AC5A3 /* ABCPcmToWav.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ABCPcmToWav.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				429581CE2613527A004AC5A3 /* ABCRecoder.hpp */,
 				429581D626135BF4004AC5A3 /* ABCAudioPlay.cpp */,
 				429581D726135BF4004AC5A3 /* ABCAudioPlay.hpp */,
+				429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */,
+				429581E92615F910004AC5A3 /* ABCPcmToWav.hpp */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				42958185261351D1004AC5A3 /* ViewController.mm in Sources */,
 				429581CF2613527A004AC5A3 /* ABCRecoder.cpp in Sources */,
 				429581D826135BF4004AC5A3 /* ABCAudioPlay.cpp in Sources */,
+				429581EA2615F910004AC5A3 /* ABCPcmToWav.cpp in Sources */,
 				4295818D261351D3004AC5A3 /* main.m in Sources */,
 				42958182261351D1004AC5A3 /* AppDelegate.m in Sources */,
 			);

@@ -6,12 +6,13 @@
 //
 
 #import "ViewController.h"
-
+#include "ABCPcmToWav.hpp"
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+   
     _recoder = ABCRecoder();
     _audioPlayer = ABCAudioPlay();
 }
@@ -30,6 +31,9 @@
 - (IBAction)endRecoderAction:(id)sender {
     
     _recoder.stopRecoder();
+}
+- (IBAction)pcmtowavAction:(id)sender {
+    ABCPcmToWav::pcmToWav();
 }
 
 
