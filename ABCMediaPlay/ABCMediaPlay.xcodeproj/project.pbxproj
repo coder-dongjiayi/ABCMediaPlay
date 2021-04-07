@@ -14,21 +14,22 @@
 		4295818D261351D3004AC5A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4295818C261351D3004AC5A3 /* main.m */; };
 		42958198261351D3004AC5A3 /* ABCMediaPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42958197261351D3004AC5A3 /* ABCMediaPlayTests.m */; };
 		429581A3261351D3004AC5A3 /* ABCMediaPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 429581A2261351D3004AC5A3 /* ABCMediaPlayUITests.m */; };
-		429581C026135252004AC5A3 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581B726135252004AC5A3 /* libavutil.a */; };
-		429581C126135252004AC5A3 /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581B826135252004AC5A3 /* libavresample.a */; };
-		429581C226135252004AC5A3 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581B926135252004AC5A3 /* libavformat.a */; };
-		429581C326135252004AC5A3 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581BA26135252004AC5A3 /* libswresample.a */; };
-		429581C426135252004AC5A3 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581BB26135252004AC5A3 /* libswscale.a */; };
-		429581C526135252004AC5A3 /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581BC26135252004AC5A3 /* libpostproc.a */; };
-		429581C626135252004AC5A3 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581BD26135252004AC5A3 /* libavcodec.a */; };
-		429581C726135252004AC5A3 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581BE26135252004AC5A3 /* libavfilter.a */; };
-		429581C826135252004AC5A3 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581BF26135252004AC5A3 /* libavdevice.a */; };
 		429581CF2613527A004AC5A3 /* ABCRecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581CD2613527A004AC5A3 /* ABCRecoder.cpp */; };
 		429581D826135BF4004AC5A3 /* ABCAudioPlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581D626135BF4004AC5A3 /* ABCAudioPlay.cpp */; };
-		429581E226135CDF004AC5A3 /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581DF26135CDF004AC5A3 /* libSDL2_test.a */; };
-		429581E326135CDF004AC5A3 /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E026135CDF004AC5A3 /* libSDL2main.a */; };
-		429581E426135CDF004AC5A3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E126135CDF004AC5A3 /* libSDL2.a */; };
 		429581EA2615F910004AC5A3 /* ABCPcmToWav.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */; };
+		BD5DC2B8261DA22D00E3DF9C /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B0261DA20500E3DF9C /* libavcodec.a */; };
+		BD5DC2B9261DA22E00E3DF9C /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2AF261DA20500E3DF9C /* libavdevice.a */; };
+		BD5DC2BA261DA22E00E3DF9C /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B1261DA20500E3DF9C /* libavfilter.a */; };
+		BD5DC2BB261DA22E00E3DF9C /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B7261DA20500E3DF9C /* libavformat.a */; };
+		BD5DC2BC261DA22E00E3DF9C /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B6261DA20500E3DF9C /* libavresample.a */; };
+		BD5DC2BD261DA22E00E3DF9C /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B5261DA20500E3DF9C /* libavutil.a */; };
+		BD5DC2BE261DA22E00E3DF9C /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B4261DA20500E3DF9C /* libpostproc.a */; };
+		BD5DC2BF261DA22E00E3DF9C /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B3261DA20500E3DF9C /* libswresample.a */; };
+		BD5DC2C0261DA22E00E3DF9C /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5DC2B2261DA20500E3DF9C /* libswscale.a */; };
+		BD5DC2C4261DA25100E3DF9C /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581DF26135CDF004AC5A3 /* libSDL2_test.a */; };
+		BD5DC2C5261DA25100E3DF9C /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E126135CDF004AC5A3 /* libSDL2.a */; };
+		BD5DC2C6261DA25100E3DF9C /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E026135CDF004AC5A3 /* libSDL2main.a */; };
+		BD5DC2CC261DA38F00E3DF9C /* ABCRecoderWAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD5DC2CA261DA38F00E3DF9C /* ABCRecoderWAV.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,17 @@
 		429581E126135CDF004AC5A3 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../../../../../usr/local/Cellar/sdl2/2.0.14_1/lib/libSDL2.a; sourceTree = "<group>"; };
 		429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ABCPcmToWav.cpp; sourceTree = "<group>"; };
 		429581E92615F910004AC5A3 /* ABCPcmToWav.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ABCPcmToWav.hpp; sourceTree = "<group>"; };
+		BD5DC2AF261DA20500E3DF9C /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libavdevice.a; sourceTree = "<group>"; };
+		BD5DC2B0261DA20500E3DF9C /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libavcodec.a; sourceTree = "<group>"; };
+		BD5DC2B1261DA20500E3DF9C /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libavfilter.a; sourceTree = "<group>"; };
+		BD5DC2B2261DA20500E3DF9C /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libswscale.a; sourceTree = "<group>"; };
+		BD5DC2B3261DA20500E3DF9C /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libswresample.a; sourceTree = "<group>"; };
+		BD5DC2B4261DA20500E3DF9C /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libpostproc.a; sourceTree = "<group>"; };
+		BD5DC2B5261DA20500E3DF9C /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libavutil.a; sourceTree = "<group>"; };
+		BD5DC2B6261DA20500E3DF9C /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libavresample.a; sourceTree = "<group>"; };
+		BD5DC2B7261DA20500E3DF9C /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.3.2/lib/libavformat.a; sourceTree = "<group>"; };
+		BD5DC2CA261DA38F00E3DF9C /* ABCRecoderWAV.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ABCRecoderWAV.cpp; sourceTree = "<group>"; };
+		BD5DC2CB261DA38F00E3DF9C /* ABCRecoderWAV.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ABCRecoderWAV.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,18 +102,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429581E226135CDF004AC5A3 /* libSDL2_test.a in Frameworks */,
-				429581E326135CDF004AC5A3 /* libSDL2main.a in Frameworks */,
-				429581E426135CDF004AC5A3 /* libSDL2.a in Frameworks */,
-				429581C026135252004AC5A3 /* libavutil.a in Frameworks */,
-				429581C126135252004AC5A3 /* libavresample.a in Frameworks */,
-				429581C226135252004AC5A3 /* libavformat.a in Frameworks */,
-				429581C326135252004AC5A3 /* libswresample.a in Frameworks */,
-				429581C426135252004AC5A3 /* libswscale.a in Frameworks */,
-				429581C526135252004AC5A3 /* libpostproc.a in Frameworks */,
-				429581C626135252004AC5A3 /* libavcodec.a in Frameworks */,
-				429581C726135252004AC5A3 /* libavfilter.a in Frameworks */,
-				429581C826135252004AC5A3 /* libavdevice.a in Frameworks */,
+				BD5DC2BF261DA22E00E3DF9C /* libswresample.a in Frameworks */,
+				BD5DC2BD261DA22E00E3DF9C /* libavutil.a in Frameworks */,
+				BD5DC2C4261DA25100E3DF9C /* libSDL2_test.a in Frameworks */,
+				BD5DC2BE261DA22E00E3DF9C /* libpostproc.a in Frameworks */,
+				BD5DC2BA261DA22E00E3DF9C /* libavfilter.a in Frameworks */,
+				BD5DC2C6261DA25100E3DF9C /* libSDL2main.a in Frameworks */,
+				BD5DC2B9261DA22E00E3DF9C /* libavdevice.a in Frameworks */,
+				BD5DC2B8261DA22D00E3DF9C /* libavcodec.a in Frameworks */,
+				BD5DC2C0261DA22E00E3DF9C /* libswscale.a in Frameworks */,
+				BD5DC2BB261DA22E00E3DF9C /* libavformat.a in Frameworks */,
+				BD5DC2BC261DA22E00E3DF9C /* libavresample.a in Frameworks */,
+				BD5DC2C5261DA25100E3DF9C /* libSDL2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +193,15 @@
 		429581B626135252004AC5A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD5DC2B0261DA20500E3DF9C /* libavcodec.a */,
+				BD5DC2AF261DA20500E3DF9C /* libavdevice.a */,
+				BD5DC2B1261DA20500E3DF9C /* libavfilter.a */,
+				BD5DC2B7261DA20500E3DF9C /* libavformat.a */,
+				BD5DC2B6261DA20500E3DF9C /* libavresample.a */,
+				BD5DC2B5261DA20500E3DF9C /* libavutil.a */,
+				BD5DC2B4261DA20500E3DF9C /* libpostproc.a */,
+				BD5DC2B3261DA20500E3DF9C /* libswresample.a */,
+				BD5DC2B2261DA20500E3DF9C /* libswscale.a */,
 				429581DF26135CDF004AC5A3 /* libSDL2_test.a */,
 				429581E126135CDF004AC5A3 /* libSDL2.a */,
 				429581E026135CDF004AC5A3 /* libSDL2main.a */,
@@ -206,6 +227,8 @@
 				429581D726135BF4004AC5A3 /* ABCAudioPlay.hpp */,
 				429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */,
 				429581E92615F910004AC5A3 /* ABCPcmToWav.hpp */,
+				BD5DC2CA261DA38F00E3DF9C /* ABCRecoderWAV.cpp */,
+				BD5DC2CB261DA38F00E3DF9C /* ABCRecoderWAV.hpp */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -338,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5DC2CC261DA38F00E3DF9C /* ABCRecoderWAV.cpp in Sources */,
 				42958185261351D1004AC5A3 /* ViewController.mm in Sources */,
 				429581CF2613527A004AC5A3 /* ABCRecoder.cpp in Sources */,
 				429581D826135BF4004AC5A3 /* ABCAudioPlay.cpp in Sources */,
@@ -518,12 +542,13 @@
 					"$(inherited)",
 					/usr/local/Cellar/ffmpeg/4.3.1_9/lib,
 					/usr/local/Cellar/sdl2/2.0.14_1/lib,
+					/usr/local/Cellar/ffmpeg/4.3.2/lib,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dss.ABCMediaPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/sdl2/2.0.14_1/include,
-					/usr/local/Cellar/ffmpeg/4.3.1_9/include,
+					/usr/local/Cellar/ffmpeg/4.3.2/include,
 				);
 			};
 			name = Debug;
@@ -545,12 +570,13 @@
 					"$(inherited)",
 					/usr/local/Cellar/ffmpeg/4.3.1_9/lib,
 					/usr/local/Cellar/sdl2/2.0.14_1/lib,
+					/usr/local/Cellar/ffmpeg/4.3.2/lib,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dss.ABCMediaPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/sdl2/2.0.14_1/include,
-					/usr/local/Cellar/ffmpeg/4.3.1_9/include,
+					/usr/local/Cellar/ffmpeg/4.3.2/include,
 				);
 			};
 			name = Release;
