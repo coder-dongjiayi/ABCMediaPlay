@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #include "ABCPcmToWav.hpp"
+#include "ABCAduioResample.hpp"
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -21,6 +22,10 @@
     _audioPlayer.play();
 }
 
+- (IBAction)audioResampleAction:(id)sender {
+    ABCAudioResample().resample();
+    
+}
 
 
 - (IBAction)startRecoderAction:(id)sender {
