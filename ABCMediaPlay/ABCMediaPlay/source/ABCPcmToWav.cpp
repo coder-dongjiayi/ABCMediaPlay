@@ -10,8 +10,10 @@
 
 #include <iostream>
 using namespace::std;
+
 void ABCPcmToWav::pcmToWav(){
     cout << "这是home路径:" <<getenv ("HOME")<< endl;
+    
     
     //2748416
     WAVHeader header;
@@ -26,6 +28,7 @@ void ABCPcmToWav::pcmToWav(){
     _pcmToWav(header, "out.pcm", "out.wav");
     
 }
+
 void ABCPcmToWav::_pcmToWav(WAVHeader &header, const char *pcmFilename, const char *wavFileName){
     
     //打开pcm文件
