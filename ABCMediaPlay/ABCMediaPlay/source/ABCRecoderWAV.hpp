@@ -12,6 +12,9 @@
 
 class ABCRecoderWAV{
   
+private:
+
+    bool _isStop;
 public:
     ABCRecoderWAV();
     ~ABCRecoderWAV();

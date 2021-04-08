@@ -760,17 +760,41 @@
                                     </connections>
                                 </buttonCell>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="48z-Ma-QxH">
+                                <rect key="frame" x="49" y="209" width="86" height="32"/>
+                                <buttonCell key="cell" type="push" title="录制wav" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="odv-1v-aIr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="startWavAction:" target="XfG-lQ-9wD" id="T2B-3W-9mZ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fKL-Jm-Jaa">
+                                <rect key="frame" x="49" y="177" width="113" height="32"/>
+                                <buttonCell key="cell" type="push" title="停止录制wav" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VYB-z1-sec">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="stopWavAction:" target="XfG-lQ-9wD" id="xVh-5N-GcK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="qzJ-4B-7WH" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="5aM-oo-2Qm"/>
+                            <constraint firstItem="fKL-Jm-Jaa" firstAttribute="top" secondItem="48z-Ma-QxH" secondAttribute="bottom" constant="12" symbolic="YES" id="Axl-pA-MpS"/>
                             <constraint firstItem="Y2L-Vm-6Sf" firstAttribute="leading" secondItem="qzJ-4B-7WH" secondAttribute="trailing" constant="42" id="Dqp-Kz-WXs"/>
                             <constraint firstItem="Y2L-Vm-6Sf" firstAttribute="centerY" secondItem="qzJ-4B-7WH" secondAttribute="centerY" id="HzH-dI-WGg"/>
                             <constraint firstItem="Iyk-v9-2Tz" firstAttribute="centerX" secondItem="qzJ-4B-7WH" secondAttribute="centerX" id="Lgt-aV-GjV"/>
+                            <constraint firstItem="48z-Ma-QxH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="56" id="NH8-Y7-xuc"/>
                             <constraint firstItem="vvh-QK-Cgc" firstAttribute="centerY" secondItem="qzJ-4B-7WH" secondAttribute="centerY" id="Qcm-BN-aB5"/>
                             <constraint firstItem="Iyk-v9-2Tz" firstAttribute="top" secondItem="qzJ-4B-7WH" secondAttribute="bottom" constant="25" id="SzQ-Bz-oqx"/>
                             <constraint firstItem="qzJ-4B-7WH" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="cDY-0a-b9w"/>
+                            <constraint firstItem="fKL-Jm-Jaa" firstAttribute="leading" secondItem="48z-Ma-QxH" secondAttribute="leading" id="fJE-6I-tIP"/>
                             <constraint firstItem="qzJ-4B-7WH" firstAttribute="leading" secondItem="vvh-QK-Cgc" secondAttribute="trailing" constant="49" id="hIE-US-waT"/>
                             <constraint firstItem="T8Q-Yk-hcE" firstAttribute="centerY" secondItem="Iyk-v9-2Tz" secondAttribute="centerY" id="it1-Qj-VcS"/>
+                            <constraint firstItem="48z-Ma-QxH" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="34" id="lRG-xo-inL"/>
                             <constraint firstItem="T8Q-Yk-hcE" firstAttribute="leading" secondItem="Y2L-Vm-6Sf" secondAttribute="leading" id="qDW-gh-go3"/>
                         </constraints>
                     </view>
