@@ -28,6 +28,8 @@ typedef struct {
     //fmt WAVE
     uint8_t format[4] = {'W','A','V','E'};
     
+    uint8_t fmtChunkId[4] = {'f', 'm', 't', ' '};
+    
     // fmt chunk的data大小
     uint32_t fmChunkDataSize = 16;
     
@@ -79,9 +81,9 @@ void _start(bool &isStop){
     }
     const char * deviceName = ":0";
     AVFormatContext * context = nullptr;
-    AVDictionary * options = nullptr;
+ 
     
-    int ret = avformat_open_input(&context, deviceName, fmt, &options);
+    int ret = avformat_open_input(&context, deviceName, fmt, nullptr);
     if(ret < 0){
         char errorbuf[1024] = {0};
         av_strerror(ret, errorbuf, sizeof(errorbuf));
@@ -91,19 +93,28 @@ void _start(bool &isStop){
     
     ofstream wavFile;
    
-    wavFile.open("recoderWav.wav");
+    wavFile.open("recoderWav1.wav");
 
     if(wavFile.is_open() == false){
         cout << "recoderWav.wav文件打开失败" << endl;
         return;
     }
+    AVStream * stream = context->streams[0];
+    AVCodecParameters *parameter =  stream->codecpar;
+    
     WAVHeader header;
-   
+    header.sampleRate = parameter->sample_rate;
+    header.bitPerSample = av_get_bits_per_sample(parameter->codec_id);
+    header.numChannels = parameter->channels;
+    header.blockAlign = header.bitPerSample * header.numChannels >> 3;
+    header.byteRate =  header.sampleRate * header.blockAlign;
+    header.dataChunkDataSize = 0;
+    if (parameter->codec_id == AV_CODEC_ID_PCM_F32BE) {
+        header.audioFormat = 3;
+    }
+  
     wavFile.write((char*)&header, sizeof(WAVHeader));
 
-  
-   
-    
     AVPacket pkt;
     while (isStop == false) {
         ret = av_read_frame(context, &pkt);
@@ -113,6 +124,7 @@ void _start(bool &isStop){
         if(ret == 0){
 
             wavFile.write((const char*)pkt.data, pkt.size);
+            header.dataChunkDataSize += pkt.size;
         }else{
             char errbuf[1024];
             av_strerror(ret, errbuf, sizeof(errbuf));
@@ -122,32 +134,21 @@ void _start(bool &isStop){
 
     }
 
-        
-        wavFile.seekp(sizeof(WAVHeader),wavFile.end);
-
-        uint32_t fileSize = (uint32_t)wavFile.tellp();
-        uint32_t diff = 36;
+    wavFile.seekp(sizeof(WAVHeader) - sizeof(header.dataChunkDataSize));
+    wavFile.write((char*)&header.dataChunkDataSize, sizeof(header.dataChunkDataSize));
     
-        wavFile.seekp(0,wavFile.end);
-        uint32_t fileSize2 = (uint32_t)wavFile.tellp();
-
-        header.riffChunkDataSize = fileSize + diff;
-        header.sampleRate = 44100;
-        header.bitPerSample = 16;
-        header.numChannels = 2;
-        header.blockAlign = header.bitPerSample * header.numChannels >> 3;
-        header.byteRate =  header.sampleRate * header.blockAlign;
-
-        header.dataChunkDataSize = fileSize;
-
-        wavFile.seekp(0);
-        wavFile.write((char*)&header, sizeof(WAVHeader));
-
-        wavFile.seekp(0,wavFile.end);
-        uint32_t fileSize3 = (uint32_t)wavFile.tellp();
+    wavFile.seekp(0,wavFile.end);
+    uint32_t fileSize = (uint32_t)wavFile.tellp();
     
-        wavFile.close();
-        avformat_close_input(&context);
+    header.riffChunkDataSize =  (uint32_t)(fileSize - sizeof(header.riffChunkId) - sizeof(header.riffChunkDataSize));
+    
+    
+    wavFile.seekp(sizeof(header.riffChunkId));
+    wavFile.write((char*)&header.riffChunkDataSize, sizeof(header.riffChunkDataSize));
+
+    wavFile.close();
+    
+    avformat_close_input(&context);
         cout << "录音结束"<< endl;
    
 }
