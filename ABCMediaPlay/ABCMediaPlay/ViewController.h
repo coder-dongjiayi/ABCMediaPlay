@@ -6,16 +6,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#include "ABCRecoder.hpp"
-#include "ABCAudioPlay.hpp"
-#include "ABCRecoderWAV.hpp"
+//#include "ABCRecoder.hpp"
+//#include "ABCAudioPlay.hpp"
+//#include "ABCRecoderWAV.hpp"
 @interface ViewController : NSViewController
 {
-    ABCRecoder _recoder;
-    
-    ABCAudioPlay _audioPlayer;
-    
-    ABCRecoderWAV _recoderWav;
+//    ABCRecoder _recoder;
+//
+//    ABCAudioPlay _audioPlayer;
+//
+//    ABCRecoderWAV _recoderWav;
 }
 
 @end

@@ -711,7 +711,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qzJ-4B-7WH">
-                                <rect key="frame" x="196" y="118" width="88" height="32"/>
+                                <rect key="frame" x="193" y="118" width="94" height="32"/>
                                 <buttonCell key="cell" type="push" title="开始录音" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TDb-oq-QbM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -721,7 +721,7 @@
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Iyk-v9-2Tz">
-                                <rect key="frame" x="196" y="73" width="88" height="32"/>
+                                <rect key="frame" x="193" y="72" width="94" height="32"/>
                                 <buttonCell key="cell" type="push" title="结束录音" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mcd-4q-kgJ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -731,7 +731,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-Vm-6Sf">
-                                <rect key="frame" x="312" y="118" width="88" height="32"/>
+                                <rect key="frame" x="317" y="118" width="94" height="32"/>
                                 <buttonCell key="cell" type="push" title="播放录音" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1IR-mb-CcJ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -741,7 +741,7 @@
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vvh-QK-Cgc">
-                                <rect key="frame" x="60" y="118" width="101" height="32"/>
+                                <rect key="frame" x="49" y="118" width="107" height="32"/>
                                 <buttonCell key="cell" type="push" title="pcm转wav" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="teC-FL-lh9">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -751,34 +751,44 @@
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-Yk-hcE">
-                                <rect key="frame" x="312" y="73" width="101" height="32"/>
+                                <rect key="frame" x="317" y="72" width="107" height="32"/>
                                 <buttonCell key="cell" type="push" title="音频重采样" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u3Y-3H-rny">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <connections>
                                         <action selector="audioResampleAction:" target="XfG-lQ-9wD" id="WJR-y1-fnQ"/>
                                     </connections>
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="48z-Ma-QxH">
-                                <rect key="frame" x="49" y="209" width="86" height="32"/>
+                                <rect key="frame" x="50" y="208" width="92" height="32"/>
                                 <buttonCell key="cell" type="push" title="录制wav" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="odv-1v-aIr">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="startWavAction:" target="XfG-lQ-9wD" id="T2B-3W-9mZ"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fKL-Jm-Jaa">
-                                <rect key="frame" x="49" y="177" width="113" height="32"/>
+                                <rect key="frame" x="50" y="175" width="119" height="32"/>
                                 <buttonCell key="cell" type="push" title="停止录制wav" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VYB-z1-sec">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="stopWavAction:" target="XfG-lQ-9wD" id="xVh-5N-GcK"/>
                                 </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CiY-bo-zsc">
+                                <rect key="frame" x="206" y="175" width="118" height="32"/>
+                                <buttonCell key="cell" type="push" title="pcm编码aac" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OK4-Tc-0ff">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="pcmEncodeAccAction:" target="XfG-lQ-9wD" id="guw-9Q-vhe"/>
+                                    </connections>
+                                </buttonCell>
                             </button>
                         </subviews>
                         <constraints>
@@ -787,9 +797,11 @@
                             <constraint firstItem="Y2L-Vm-6Sf" firstAttribute="leading" secondItem="qzJ-4B-7WH" secondAttribute="trailing" constant="42" id="Dqp-Kz-WXs"/>
                             <constraint firstItem="Y2L-Vm-6Sf" firstAttribute="centerY" secondItem="qzJ-4B-7WH" secondAttribute="centerY" id="HzH-dI-WGg"/>
                             <constraint firstItem="Iyk-v9-2Tz" firstAttribute="centerX" secondItem="qzJ-4B-7WH" secondAttribute="centerX" id="Lgt-aV-GjV"/>
+                            <constraint firstItem="CiY-bo-zsc" firstAttribute="centerY" secondItem="fKL-Jm-Jaa" secondAttribute="centerY" id="MPO-LF-GAa"/>
                             <constraint firstItem="48z-Ma-QxH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="56" id="NH8-Y7-xuc"/>
                             <constraint firstItem="vvh-QK-Cgc" firstAttribute="centerY" secondItem="qzJ-4B-7WH" secondAttribute="centerY" id="Qcm-BN-aB5"/>
                             <constraint firstItem="Iyk-v9-2Tz" firstAttribute="top" secondItem="qzJ-4B-7WH" secondAttribute="bottom" constant="25" id="SzQ-Bz-oqx"/>
+                            <constraint firstItem="CiY-bo-zsc" firstAttribute="leading" secondItem="fKL-Jm-Jaa" secondAttribute="trailing" constant="49" id="U1D-bu-xot"/>
                             <constraint firstItem="qzJ-4B-7WH" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="cDY-0a-b9w"/>
                             <constraint firstItem="fKL-Jm-Jaa" firstAttribute="leading" secondItem="48z-Ma-QxH" secondAttribute="leading" id="fJE-6I-tIP"/>
                             <constraint firstItem="qzJ-4B-7WH" firstAttribute="leading" secondItem="vvh-QK-Cgc" secondAttribute="trailing" constant="49" id="hIE-US-waT"/>
