@@ -55,7 +55,7 @@ void _startRecoder(bool &isStop){
         return;
     }
     
-    cout << "这是home路径:" <<getenv ("HOME");
+    cout << "这是home路径:" <<getenv ("HOME") << endl;
     
     //3. 写入文件
     ofstream file;

@@ -16,7 +16,18 @@
    
     _recoder = ABCRecoder();
     _audioPlayer = ABCAudioPlay();
+    _recoderWav = ABCRecoderWAV();
+    
 }
+
+- (IBAction)startWavAction:(id)sender {
+    _recoderWav.startRecoder();
+}
+
+- (IBAction)stopWavAction:(id)sender {
+    _recoderWav.stopRecoder();
+}
+
 
 - (IBAction)playAudioAction:(id)sender {
     _audioPlayer.play();

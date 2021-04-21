@@ -11,6 +11,7 @@
 
 
 ABCAudioResample::ABCAudioResample(){
+    cout << "这是home路径:" <<getenv ("HOME") << endl;
     this->inFilePath = "44100_s16le_2.pcm";
     this->outFilePath = "48000_f32le_1.pcm";
     
@@ -82,7 +83,7 @@ void ABCAudioResample::resample(){
     uint8_t **outData = nullptr;
     int outChannels = av_get_channel_layout_nb_channels(outChLayout);
     int out_linesize = 0;
-    int outSamples = 1024;
+    int outSamples = (int)av_rescale_rnd(outsampleRate, inSamples, insampleRate, AV_ROUND_UP);
     // av_get_bytes_per_sample 这个方法返回的就是 字节大小 所以不需要在 除以8了
     int outBytesPerSample = outChannels * av_get_bytes_per_sample(outSampleFormat);
     
@@ -133,6 +134,11 @@ void ABCAudioResample::resample(){
         //转换成功写入文件中
         this->outStream.write((char*)outData[0], ret * outBytesPerSample);
         
+    }
+    
+    //检查缓冲区是否还有残留样本 如果有就写入文件
+    while ((ret = swr_convert(this->swrContext,outData,outSamples,nullptr,0)) > 0) {
+        this->outStream.write((char*)outData[0], ret * outBytesPerSample);
     }
     //6.释放资源
     
