@@ -36,7 +36,7 @@ static int encode(AVCodecContext *ctx,AVFrame *frame,AVPacket *pkt,FILE *file){
             return ret;
         }
         
-        fwrite(pkt->data, sizeof(pkt->data), pkt->size, file);
+        fwrite(pkt->data, sizeof(pkt->data[0]), pkt->size, file);
         
        av_packet_unref(pkt);
     }
@@ -136,8 +136,8 @@ int aac_encode(void){
     
     //从 in.pcm中读取采样数据 把每一个样本进行编码
    
-
-    while (( ret = (int)fread((char*)frame->data[0], sizeof(frame->data[0]), frame->linesize[0], inFile)) > 0) {
+    
+    while (( ret = (int)fread((char*)frame->data[0], sizeof(frame->data[0][0]), frame->linesize[0], inFile)) > 0) {
      
         if(ret < frame->linesize[0]){
             int chs = av_get_channel_layout_nb_channels(frame->channel_layout);
