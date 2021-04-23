@@ -18,19 +18,19 @@
 		429581D826135BF4004AC5A3 /* ABCAudioPlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581D626135BF4004AC5A3 /* ABCAudioPlay.cpp */; };
 		429581EA2615F910004AC5A3 /* ABCPcmToWav.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581E82615F910004AC5A3 /* ABCPcmToWav.cpp */; };
 		429581F9261DDFF8004AC5A3 /* ABCAduioResample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 429581F7261DDFF8004AC5A3 /* ABCAduioResample.cpp */; };
-		42F1450F263052BC0071C810 /* libpostproc.55.10.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F14507263052BC0071C810 /* libpostproc.55.10.100.dylib */; };
-		42F14510263052BC0071C810 /* libavfilter.7.111.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F14508263052BC0071C810 /* libavfilter.7.111.100.dylib */; };
-		42F14511263052BC0071C810 /* libavutil.56.72.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F14509263052BC0071C810 /* libavutil.56.72.100.dylib */; };
-		42F14512263052BC0071C810 /* libswresample.3.10.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1450A263052BC0071C810 /* libswresample.3.10.100.dylib */; };
-		42F14513263052BC0071C810 /* libavcodec.58.136.101.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1450B263052BC0071C810 /* libavcodec.58.136.101.dylib */; };
-		42F14514263052BC0071C810 /* libavdevice.58.14.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1450C263052BC0071C810 /* libavdevice.58.14.100.dylib */; };
-		42F14515263052BC0071C810 /* libswscale.5.10.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1450D263052BC0071C810 /* libswscale.5.10.100.dylib */; };
-		42F14516263052BC0071C810 /* libavformat.58.78.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F1450E263052BC0071C810 /* libavformat.58.78.100.dylib */; };
 		BD5DC2C4261DA25100E3DF9C /* libSDL2_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581DF26135CDF004AC5A3 /* libSDL2_test.a */; };
 		BD5DC2C5261DA25100E3DF9C /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E126135CDF004AC5A3 /* libSDL2.a */; };
 		BD5DC2C6261DA25100E3DF9C /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 429581E026135CDF004AC5A3 /* libSDL2main.a */; };
 		BD5DC2CC261DA38F00E3DF9C /* ABCRecoderWAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD5DC2CA261DA38F00E3DF9C /* ABCRecoderWAV.cpp */; };
 		BD9432CA26300F06009F4E8E /* pcmencodeaac.c in Sources */ = {isa = PBXBuildFile; fileRef = BD9432C926300F06009F4E8E /* pcmencodeaac.c */; };
+		BD94330026310E7D009F4E8E /* libavcodec.58.91.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432D426301139009F4E8E /* libavcodec.58.91.100.dylib */; };
+		BD94330126310E7D009F4E8E /* libavdevice.58.10.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432D526301139009F4E8E /* libavdevice.58.10.100.dylib */; };
+		BD94330226310E7D009F4E8E /* libavfilter.7.85.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432D026301139009F4E8E /* libavfilter.7.85.100.dylib */; };
+		BD94330326310E7D009F4E8E /* libavformat.58.45.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432D126301139009F4E8E /* libavformat.58.45.100.dylib */; };
+		BD94330426310E7D009F4E8E /* libavutil.56.51.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432CF26301139009F4E8E /* libavutil.56.51.100.dylib */; };
+		BD94330526310E7D009F4E8E /* libpostproc.55.7.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432D226301139009F4E8E /* libpostproc.55.7.100.dylib */; };
+		BD94330626310E7D009F4E8E /* libswresample.3.7.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432CE26301139009F4E8E /* libswresample.3.7.100.dylib */; };
+		BD94330726310E7D009F4E8E /* libswscale.5.7.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9432D326301139009F4E8E /* libswscale.5.7.100.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,14 +123,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F1450F263052BC0071C810 /* libpostproc.55.10.100.dylib in Frameworks */,
-				42F14510263052BC0071C810 /* libavfilter.7.111.100.dylib in Frameworks */,
-				42F14511263052BC0071C810 /* libavutil.56.72.100.dylib in Frameworks */,
-				42F14512263052BC0071C810 /* libswresample.3.10.100.dylib in Frameworks */,
-				42F14513263052BC0071C810 /* libavcodec.58.136.101.dylib in Frameworks */,
-				42F14514263052BC0071C810 /* libavdevice.58.14.100.dylib in Frameworks */,
-				42F14515263052BC0071C810 /* libswscale.5.10.100.dylib in Frameworks */,
-				42F14516263052BC0071C810 /* libavformat.58.78.100.dylib in Frameworks */,
+				BD94330026310E7D009F4E8E /* libavcodec.58.91.100.dylib in Frameworks */,
+				BD94330126310E7D009F4E8E /* libavdevice.58.10.100.dylib in Frameworks */,
+				BD94330226310E7D009F4E8E /* libavfilter.7.85.100.dylib in Frameworks */,
+				BD94330326310E7D009F4E8E /* libavformat.58.45.100.dylib in Frameworks */,
+				BD94330426310E7D009F4E8E /* libavutil.56.51.100.dylib in Frameworks */,
+				BD94330526310E7D009F4E8E /* libpostproc.55.7.100.dylib in Frameworks */,
+				BD94330626310E7D009F4E8E /* libswresample.3.7.100.dylib in Frameworks */,
+				BD94330726310E7D009F4E8E /* libswscale.5.7.100.dylib in Frameworks */,
 				BD5DC2C4261DA25100E3DF9C /* libSDL2_test.a in Frameworks */,
 				BD5DC2C6261DA25100E3DF9C /* libSDL2main.a in Frameworks */,
 				BD5DC2C5261DA25100E3DF9C /* libSDL2.a in Frameworks */,

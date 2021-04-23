@@ -17,7 +17,10 @@ static int check_sample_fmt(const AVCodec *codec,enum AVSampleFormat sample_fmt)
 
     return 0;
 }
-static int encode(AVCodecContext *ctx,AVFrame *frame,AVPacket *pkt,FILE *file){
+static int encode(AVCodecContext *ctx,
+                  AVFrame *frame,
+                  AVPacket *pkt,
+                  FILE *file){
     
     int ret  = avcodec_send_frame(ctx, frame);
     if(ret < 0){
@@ -36,7 +39,7 @@ static int encode(AVCodecContext *ctx,AVFrame *frame,AVPacket *pkt,FILE *file){
             return ret;
         }
         
-        fwrite(pkt->data, sizeof(pkt->data[0]), pkt->size, file);
+        fwrite((char*)pkt->data, 1, pkt->size, file);
         
        av_packet_unref(pkt);
     }
@@ -49,11 +52,11 @@ int aac_encode(void){
     
     AudioEncodeSpec audioEncodeSpec;
     audioEncodeSpec.chLayout = AV_CH_LAYOUT_STEREO;
-    audioEncodeSpec.filename = "in.pcm";
+    audioEncodeSpec.filename = "44100_s16le_2.pcm";
     audioEncodeSpec.smapleRate = 44100;
     audioEncodeSpec.sampleFmt = AV_SAMPLE_FMT_S16;
     
-    printf("home路径%s",getenv ("HOME"));
+    printf("home路径%s\n",getenv ("HOME"));
     
     int ret = 0;
     //编码器
@@ -75,14 +78,19 @@ int aac_encode(void){
         printf("获取编码器上下文失败");
         return -3;
     }
-    ctx->sample_fmt = audioEncodeSpec.sampleFmt;
     ctx->sample_rate = audioEncodeSpec.smapleRate;
+    ctx->sample_fmt = audioEncodeSpec.sampleFmt;
     ctx->channel_layout = audioEncodeSpec.chLayout;
     
+    //比特率
     ctx->bit_rate = 32000;
+    //规格
     ctx->profile = FF_PROFILE_AAC_HE_V2;
     
-    
+    // 打开编码器
+//    AVDictionary *options = nullptr;
+//    av_dict_set(&options, "vbr", "5", 0);
+//    ret = avcodec_open2(ctx, codec, &options);
     ret = avcodec_open2(ctx, codec, NULL);
     
     if(ret < 0){
@@ -138,12 +146,14 @@ int aac_encode(void){
    
     
     while (( ret = (int)fread((char*)frame->data[0], sizeof(frame->data[0][0]), frame->linesize[0], inFile)) > 0) {
-     
-        if(ret < frame->linesize[0]){
-            int chs = av_get_channel_layout_nb_channels(frame->channel_layout);
-            int bytes = av_get_bytes_per_sample(frame->format);
-            frame->nb_samples = ret / (chs * bytes);
-        }
+       
+//        if(ret < frame->linesize[0]){
+//
+//
+//            int chs = av_get_channel_layout_nb_channels(frame->channel_layout);
+//            int bytes = av_get_bytes_per_sample(audioEncodeSpec.sampleFmt);
+//            frame->nb_samples = ret / (chs * bytes);
+//        }
         
         if(encode(ctx, frame, pkt, outFile) < 0){
             goto end;
