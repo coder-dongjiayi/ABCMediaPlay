@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4227C2F02646CC06009CF65B /* video_recoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4227C2EF2646CC06009CF65B /* video_recoder.c */; };
 		42958182261351D1004AC5A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42958181261351D1004AC5A3 /* AppDelegate.m */; };
 		42958185261351D1004AC5A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42958184261351D1004AC5A3 /* ViewController.m */; };
 		42958187261351D3004AC5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42958186261351D3004AC5A3 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4227C2EE2646CC06009CF65B /* video_recoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = video_recoder.h; sourceTree = "<group>"; };
+		4227C2EF2646CC06009CF65B /* video_recoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = video_recoder.c; sourceTree = "<group>"; };
 		4295817D261351D1004AC5A3 /* ABCMediaPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABCMediaPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42958180261351D1004AC5A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42958181261351D1004AC5A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 				429581F8261DDFF8004AC5A3 /* ABCAduioResample.hpp */,
 				BD9432C826300F06009F4E8E /* pcmencodeaac.h */,
 				BD9432C926300F06009F4E8E /* pcmencodeaac.c */,
+				4227C2EE2646CC06009CF65B /* video_recoder.h */,
+				4227C2EF2646CC06009CF65B /* video_recoder.c */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 			files = (
 				BD5DC2CC261DA38F00E3DF9C /* ABCRecoderWAV.cpp in Sources */,
 				42958185261351D1004AC5A3 /* ViewController.m in Sources */,
+				4227C2F02646CC06009CF65B /* video_recoder.c in Sources */,
 				429581CF2613527A004AC5A3 /* ABCRecoder.cpp in Sources */,
 				429581D826135BF4004AC5A3 /* ABCAudioPlay.cpp in Sources */,
 				BD9432CA26300F06009F4E8E /* pcmencodeaac.c in Sources */,

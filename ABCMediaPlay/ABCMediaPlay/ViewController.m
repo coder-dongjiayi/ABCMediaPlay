@@ -9,6 +9,7 @@
 //#include "ABCPcmToWav.hpp"
 //#include "ABCAduioResample.hpp"
 #include "pcmencodeaac.h"
+#include "video_recoder.h"
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -28,6 +29,10 @@
     
 }
 
+- (IBAction)videoRecoderAction:(id)sender {
+    recoder_video();
+    
+}
 
 - (IBAction)startWavAction:(id)sender {
   //  _recoderWav.startRecoder();
